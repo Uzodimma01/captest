@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'echo "Hello World"'
-                sh "bash test.sh"
+                sh 'echo "Hello plus"'
+                sh 'bash test.sh'
             }
         }
     }
