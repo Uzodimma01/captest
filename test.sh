@@ -12,3 +12,4 @@ echo $k
 # Step 3:
 # Push image to a docker repository
 echo "docker tester"
+echo $k
