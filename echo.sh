@@ -1,3 +1,4 @@
+. ./test.sh
 bash echo $k
 echo $k
 echo $k
