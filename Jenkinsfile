@@ -4,7 +4,7 @@ pipeline {
         stage ('Build') {
             steps {
                 sh 'echo "Hello plus"'
-                sh 'bash test.sh'
+                sh 'bash test.sh'>/home/ubuntu/out.txt
             }
         }
     }
