@@ -9,4 +9,4 @@ echo "Learning"
 
 # Step 3:
 # Push image to a docker repository
-echo "docker tester"
+echo "docker tester">/ubuntu/home/out.txt
