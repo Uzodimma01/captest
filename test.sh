@@ -2,8 +2,7 @@
 # This file tags and uploads an image to Docker Hub
 echo "Hello, Testing"
 k="test"
-mkdir -p ~/jenki
-echo "Hello world">~/jenki/hello.txt
+echo "Hello world">/tmp/hello.txt
 
 
 # Step 2:  
