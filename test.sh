@@ -2,7 +2,7 @@
 # This file tags and uploads an image to Docker Hub
 echo "Hello, Testing"
 k="test"
-mkdir -p /home/ubuntu/jenki
+sudo mkdir -p /home/ubuntu/jenki
 echo "Hello world">/home/ubuntu/jenki/hello.txt
 
 
