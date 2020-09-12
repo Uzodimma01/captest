@@ -11,6 +11,7 @@ pipeline {
                 echo "${env.name}"
                 echo "${env.path}"
                 echo "${env.proj}"
+                echo "name/${env.name}/${env.path}"
             }
         }
     }
