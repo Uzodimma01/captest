@@ -7,7 +7,7 @@ pipeline {
                     env.name = readFile 'name.txt' 
                     env.path = readFile 'path.txt'
                 }
-                echo "${env.name}"
+                echo "${env.name}:${env.path}"
             }
         }
     }
