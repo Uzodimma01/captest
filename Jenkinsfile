@@ -9,10 +9,5 @@ pipeline {
                 }
             }
         }
-        stage("echo") {
-            steps {
-                echo "hello${env.name}:${env.path}"
-            }
-        }
     }
 }
