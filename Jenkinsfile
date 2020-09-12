@@ -15,7 +15,7 @@ pipeline {
             script {
                 env.path = readfile 'path.txt'
             }
-            echo "${env.path"}
+            echo "${env.path}"
         }
     }
 }
