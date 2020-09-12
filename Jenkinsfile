@@ -6,7 +6,8 @@ pipeline {
                 script {
                     env.FILENAME = readFile 'name.txt'
                 }
-                echo "${env.FILENAME}"
+                k=${env.FILENAME}
+                echo "$k"
             }
         }
     }
