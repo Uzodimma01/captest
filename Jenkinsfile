@@ -9,8 +9,8 @@ pipeline {
                 sh 'project_path="$(<./path.txt)":$project_name'
                 sh 'bash test.sh'
                 sh 'bash echo.sh'
-                sh 'echo ${env.project_path}'
-                sh 'echo ${env.project_name}'
+                sh 'echo ${project_path}'
+                sh 'echo ${project_name}'
             }
         }
     }
