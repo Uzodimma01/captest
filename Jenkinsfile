@@ -8,7 +8,7 @@ pipeline {
                     env.path = readFile 'path.txt'
                 }
                 echo "${env.path}${env.name}"
-                sh "echo "hello""
+                sh 'echo "hello"'
             }
         }
     }
