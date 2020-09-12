@@ -6,8 +6,11 @@ pipeline {
                 script {
                     env.name = readFile 'path.txt' 
                     env.path = readFile 'path.txt'
+                    env.proj = "name/${env.name}:${env.path}"
                 }
-                sh "echo ${env.name}"
+                echo "${env.name}"
+                echo "${env.path}"
+                echo "${env.proj}"
             }
         }
     }
