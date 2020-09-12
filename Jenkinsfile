@@ -12,3 +12,7 @@ pipeline {
         stage("echo") {
             step {
                 echo "hello${env.name:${env.path}"
+            }
+        }
+    }
+}
