@@ -4,9 +4,9 @@ pipeline {
         stage("foo") {
             steps {
                 script {
-                    env.FILENAME = readFile 'name.txt'
+                    env.project_name = readfile 'path.txt'
                 }
-                echo "${env.FILENAME}"
+                echo "Hello ${env.project_name}"
             }
         }
     }
