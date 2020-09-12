@@ -4,18 +4,18 @@ pipeline {
         stage("foo") {
             steps {
                 script {
-                    env.project_name = readFile 'name.txt'
+                    env.FILENAME = readFile 'name.txt'
                 }
-                echo "${env.project_name}"
+                echo "${env.FILENAME}"
             }
         }
     }
-        stage("bar") {
-            steps {
-                script {
-                    env.project_path = readFile 'path.txt'
-                }
-                echo "${env.project_path}"
+    stage("bar") {
+        steps {
+            script {
+                env.path = readfile 'path.txt'
             }
+            echo "${env.path"}
         }
+    }
 }
