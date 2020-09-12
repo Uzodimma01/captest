@@ -9,13 +9,13 @@ pipeline {
                 echo "${env.project_name}"
             }
         }
-        stage("bar") {
-            steps {
-                script {
-                    env.path = readfile 'path.txt'
-                }
-                echo "${env.path}"
-            }
-        }
+//        stage("bar") {
+//            steps {
+//                script {
+//                    env.path = readfile 'path.txt'
+//                }
+//                echo "${env.path}"
+//            }
+//        }
     }
 }
