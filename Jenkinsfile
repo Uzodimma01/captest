@@ -10,8 +10,9 @@ pipeline {
                 echo "${env.name}:${env.path}"
             }
         }
-        stage ("bar) {
-               echo "Hello World"
-               }
+        stage("bar") {
+            steps {
+                echo "hello ${env.name}
+            }
     }
 }
