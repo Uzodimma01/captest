@@ -14,5 +14,6 @@ pipeline {
             steps {
                 echo "hello ${env.name}"
             }
+        }
     }
 }
