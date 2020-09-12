@@ -7,6 +7,7 @@ pipeline {
                     env.name = readFile 'path.txt' 
                     env.path = readFile 'path.txt'
                 }
+                sh "echo ${env.name}"
             }
         }
     }
