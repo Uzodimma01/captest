@@ -10,4 +10,14 @@ pipeline {
             }
         }
     }
+    stages {
+        stage("bar") {
+            steps {
+                script {
+                    env.project_path = readFile 'path.txt'
+                }
+                echo "${env.project_path}"
+            }
+        }
+    }
 }
