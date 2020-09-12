@@ -4,8 +4,8 @@ pipeline {
         stage("foo") {
             steps {
                 script {
-                    env.name = readFile 'name.txt' 
-                    env.path = readFile 'path.txt'
+                    env.name = readFile('name.txt').trim()
+                    env.path = readFile('path.txt').trim()
                 }
                 echo "${env.name}:${env.path}"
             }
