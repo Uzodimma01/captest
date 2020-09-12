@@ -1,6 +1,7 @@
 pipeline {
     agent any
     stages {
+        set +x
         stage ('Build') {
             steps {
                 sh 'echo "Hello plus"'
