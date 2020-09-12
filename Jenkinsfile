@@ -7,7 +7,7 @@ pipeline {
                     env.FILENAME = readFile 'name.txt'
                 }
                 sh "k=${env.FILENAME}"
-                sh "echo $k"
+                sh "echo $(k)"
             }
         }
     }
