@@ -12,7 +12,7 @@ pipeline {
         }
         stage("bar") {
             steps {
-                echo "hello ${env.name}
+                echo "hello ${env.name}"
             }
     }
 }
