@@ -8,9 +8,6 @@ pipeline {
                     env.path = readFile 'path.txt'
                 }
                 echo "${env.name}"
-                echo "${env.path}"
-                echo "${env.proj}"
-                echo "name/${env.name}.concat(${env.path})"
             }
         }
     }
