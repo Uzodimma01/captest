@@ -10,7 +10,6 @@ pipeline {
             }
         }
     }
-    stages {
         stage("bar") {
             steps {
                 script {
@@ -19,5 +18,4 @@ pipeline {
                 echo "${env.project_path}"
             }
         }
-    }
 }
