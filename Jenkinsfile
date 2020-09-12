@@ -10,7 +10,7 @@ pipeline {
             }
         }
         stage("echo") {
-            step {
+            steps {
                 echo "hello${env.name}:${env.path}"
             }
         }
