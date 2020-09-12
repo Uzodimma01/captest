@@ -1,19 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage("foo") {
+        stage("Foo") {
             steps {
                 script {
-                    env.name = readFile('name.txt').trim()
-                    env.path = readFile('path.txt').trim()
+                    env.name = readfile("name.txt").trim()
+                    env.path = readfile("path.txt").trim()
                 }
-                echo "${env.name}:${env.path}"
             }
         }
-        stage("bar") {
-            steps {
-                echo "hello ${env.name}"
-            }
-        }
-    }
-}
+        stage("echo") {
+            step {
+                echo "hello${env.name:${env.path}"
