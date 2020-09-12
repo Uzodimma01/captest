@@ -4,7 +4,7 @@ pipeline {
         stage("foo") {
             steps {
                 script {
-                    env.FILENAME = readFile 'output.txt'
+                    env.FILENAME = readFile 'name.txt'
                 }
                 echo "${env.FILENAME}"
             }
