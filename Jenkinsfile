@@ -6,8 +6,8 @@ pipeline {
                 script {
                     env.FILENAME = readFile 'name.txt'
                 }
-                sh "k=${env.FILENAME}"
-                sh "echo $(k)"
+                echo "Hello ${env.FILENAME}"
+                echo "$pwd"
             }
         }
     }
