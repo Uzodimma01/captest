@@ -12,6 +12,12 @@ pipeline {
         stage("make dir") {
             steps {
                 sh 'bash mkdir.sh'
+                sh 'bash mktxt.sh'
+            }
+        }
+        stage('Write file') {
+            steps {
+                sh 'bash ryt.sh'
             }
         }
     }
