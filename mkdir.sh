@@ -1,1 +1,1 @@
-/tmp/jenkins_build_files/cluster_arn.txt
+mkdir /tmp/jenkins_build_files/cluster_arn.txt
