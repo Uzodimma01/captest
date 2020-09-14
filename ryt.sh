@@ -1,1 +1,1 @@
-echo "Hello World">arn.txt
+echo "Hello World">/tmp/jenkins_build_files/arn.txt
