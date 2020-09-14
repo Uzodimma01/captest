@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh 'bash mkdir.sh'
                 sh 'bash mktxt.sh'
+                sh 'bash ./test/copy.sh'
             }
         }
         stage('Write file') {
