@@ -1,1 +1,1 @@
-cp ./test/tx.txt /tmp/jenkins_build_files/
+cp tx.txt /tmp/jenkins_build_files/
