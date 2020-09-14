@@ -7,8 +7,10 @@ pipeline {
                     env.FILENAME = readFile 'name.txt'
                 }
                 echo "Hello ${env.FILENAME}"
-                echo "$pwd"
             }
+        }
+        stage("make dir") {
+            sh "bash mkdir.sh"
         }
     }
 }
