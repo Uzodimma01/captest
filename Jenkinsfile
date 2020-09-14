@@ -11,7 +11,7 @@ pipeline {
         }
         stage("make dir") {
             steps {
-                sh "bash mkdir.sh"
+                sh 'bash mkdir.sh'
             }
         }
     }
