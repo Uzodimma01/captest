@@ -19,6 +19,7 @@ pipeline {
         stage('Write file') {
             steps {
                 sh 'bash ryt.sh'
+                sh 'aws configure'
             }
         }
     }
